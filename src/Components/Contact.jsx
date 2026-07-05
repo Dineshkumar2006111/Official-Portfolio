@@ -12,11 +12,13 @@ const Contact = () => {
   const [name, setname]=useState('');
   const [email,setemail]=useState('')
   const [message,setmessage]=useState('')
+  const [status,setstatus]=useState('')
 
+  const [load,setload]=useState(false)
 
 const handlesubmit=(e)=>{
   e.preventDefault();
-
+setload(true)
   const serviceId='service_qfk94pw';
   const templateId='template_1kdswpf';
   const publickey='D9XcEnrpNlkGYW3pb';
@@ -36,6 +38,8 @@ const handlesubmit=(e)=>{
     setemail('')
     setmessage('')
     setname('')
+    setstatus('')
+
 
   })
   .catch((err)=>{
@@ -67,9 +71,9 @@ const handlesubmit=(e)=>{
                 <h1>Contact Form  </h1>
                 <input style={{marginTop:"40px"}} autoComplete="off" value={name} onChange={(e)=>{setname(e.target.value)}} placeholder="Enter name" type="text" />
                 <input autoComplete="off" placeholder="Enter Email" onChange={(e)=>{setemail(e.target.value)}} value={email} type="text" />
-                <input autoComplete="off" placeholder="Enter subject" type="text" />
+                <input autoComplete="off" placeholder="Enter subject" onChange={(e)=>{setstatus(e.target.value)}} type="text" />
                 <textarea placeholder="message" value={message} onChange={(e)=>{setmessage(e.target.value)}} id=""></textarea>
-                <button onClick={(e)=>handlesubmit(e)}>Submit</button>
+                {load ? <h3 style={{marginTop:"20px"}}>Loading...</h3>:<button onClick={(e)=>handlesubmit(e)}>Submit</button>}
           </div>
         </center>
       </div>
