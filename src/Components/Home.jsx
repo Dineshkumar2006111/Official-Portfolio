@@ -20,7 +20,7 @@ const Home = () => {
     <div style={{marginTop:"60px"}}>
       
       <div id="home" style={{width:"100%",height:"90vh"}}>
-        <div id="imgdiv"><img src="images/meeai.png" alt="" /></div>
+        <div id="imgdiv"><img src="/images/meeai.png" alt="" /></div>
           <div id="content" >
             <h1 style={{fontSize:"46px"}}>Hi There,</h1>
             <h1 style={{fontSize:"55px",marginTop:"-15px",textIndent:"30px"}}>I'm <p id="pp" style={{marginLeft:"-30px",marginTop:"-10px",}}>DineshKumar</p></h1>
@@ -78,25 +78,25 @@ const Home = () => {
         <div id='interest'>
           <div className='intcart'>
             <center>
-            <img src="images/cricket.png" alt="" />
+            <img src="/images/cricket.png" alt="" />
             <h3>Cricket</h3>
             </center>
           </div>
           <div className='intcart'>
             <center>
-            <img src="images/manual.png" alt="" />
+            <img src="/images/manual.png" alt="" />
             <h3>New Skill Learner</h3>
             </center>
           </div>
           <div className='intcart'>
             <center>
-            <img src="images/coding.png" alt="" />
+            <img src="/images/coding.png" alt="" />
             <h3>Exploring New Technology</h3>
             </center>
           </div>
           <div className='intcart'>
             <center>
-            <img src="images/vinyl-record.png" alt="" />
+            <img src="/images/vinyl-record.png" alt="" />
             <h3>Listening to Music</h3>
             </center>
           </div>
