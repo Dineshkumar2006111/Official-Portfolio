@@ -1,0 +1,839 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1d045652;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    background-color: rgba(29, 29, 85, 0.438);
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+    opacity: 1;
+}
+nav h1{
+    font-family: "Monoton", sans-serif;
+    margin-top: 3px;
+    margin-left: 30px;
+    color: rgb(148, 159, 203);
+    text-shadow: 0px 0px 1.3px rgb(140, 228, 236);
+}
+nav ul{
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    right: 70px;
+    top: 17px;
+
+}
+#mea {
+    background-color: rgb(228, 219, 219);
+    height: auto;
+    width: 60px;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    gap: 10px;
+    right: 218px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+#mea li{
+   display: inline;
+}
+#mea li a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.ll{
+    text-decoration:none;
+    color: white;
+    position: relative;
+    
+}
+.ll:hover::after{
+    width: 100%;
+}
+.ll::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #94c3e0;
+    transition: width 0.28s ease-in;
+    transform: translateX(-50%);
+}
+#content{
+   
+    width:36%;
+    height:45vh;
+   
+    position: relative;
+    top: 17%;
+    left: 7%;
+}
+
+#imgdiv{
+    background-color: #9d71fb;
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    right: 8%;
+    top: 90px;
+    border-top-left-radius: 150px;
+    border-top-right-radius:20px;
+      
+}
+#imgdiv:hover{
+    box-shadow: 0px 0px 30px rgb(74, 143, 186);
+}
+#imgdiv img{
+    height: 100%;
+    width: 101%;
+    margin-left: -2px;
+   
+
+}
+#socialmedia{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+#socialmedia li{
+    list-style: none;
+}
+#socialmedia li:hover{
+    box-shadow: 0px 0px 10px whitesmoke;
+    height: 40px;
+    
+}
+#meanu{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    display: none ;
+}
+#hiddenmeanu{
+    background-color: rgb(32, 79, 150);
+    position: absolute;
+    width: 80px;
+    height: 110px;
+    right: 30px;
+    padding: 5px;
+    justify-content: center;
+    top: 50px;
+    z-index: 3;
+    
+    
+}
+#hiddenmeanu ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+#acont{
+    position: relative;
+    top: 12%;
+    margin-left: 30px;
+}
+#acont h1{
+    text-align: center;
+}
+
+.cart{
+     background-color: #281a456d;
+  border: 1px solid rgba(239, 238, 237, 0.171);
+  width: 27%;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+}
+.cart hr{
+    border: none;
+    height: 2px;
+    background: #2b374aa1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cart .symb{
+    background-color: #1265a1f9;
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -32px;
+    left: 43%;
+}
+#edu{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    width: 86%;
+    margin-left: 7%;
+    flex-wrap: wrap;
+}
+
+#interest{
+    display: flex;
+    margin-left: 7%;
+    margin-top: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.intcart{
+    background-color: #281a456d;
+    border: 1px solid rgba(239, 238, 237, 0.171);
+    width: 20%;
+    height: 200px;
+    border-radius: 15px;
+}
+.intcart img{
+    width: 60%;
+    height: 110px;
+    margin-top: 20px;
+}
+
+#skill{
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+}
+#skillc{
+    top: 65px;
+    position: relative;
+    
+}
+#skillc h1{
+    text-align: center;
+}
+#skillc p{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 10px;
+    text-align: center;
+}
+#fb{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#frontend{
+    background-color: #281a456d;
+     width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    border: 1px solid rgba(239, 238, 237, 0.171);
+     
+}
+#backend{
+  background-color: #281a456d;
+  border: 1px solid rgba(239, 238, 237, 0.171);
+     width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+}
+#frontend ul{
+    list-style: none;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#frontend #pro{
+    background-color: rgb(60, 69, 69);
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: -3px;
+}
+#frontend #pro #ln{
+    height: 100%;
+    background-color: #2a84c4;
+    border-radius: 10px;
+    margin-left: -1px;
+    width: 95%;
+}
+
+#backend ul{
+    list-style: none;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+#backend #pro{
+    background-color: rgb(60, 69, 69);
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: -3px;
+}
+#backend #pro #ln{
+    height: 100%;
+    background-color: #2a84c4;
+    border-radius: 10px;
+    margin-left: -1px;
+    width: 90%;
+}
+
+
+#procollection{
+    width: 86%;
+    margin-top: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#projdiv{
+    width: 300px;
+    height: 350px;
+    background-color: aliceblue; 
+    box-shadow: 0px 0px 7px rgba(161, 157, 157, 0.676);
+    position: relative;
+    overflow: hidden;
+}
+#projdiv img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in;
+    
+}
+#projdiv img:hover{
+    width: 100%;
+    transform: scale(1.1);
+}
+#projcont p{
+    position: absolute;
+    top: 10px;
+    font-size: 26px;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px black;
+    left: 33%;
+    
+}
+#projcont #projbut{
+    position: absolute;
+    bottom: 20px;
+    width: 26%;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: rgb(60, 73, 211);
+    left: 35%;
+    font-size: 19px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#projcont #projbut a{
+    text-decoration: none;
+    color: white;
+}
+#continfo{
+    background-color: #2a84c4;
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    top: 230px;
+    left: 100px;
+    border-radius: 20px;
+}
+#contshow{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 35%;
+    margin-top: 30px;
+}
+#contform{
+    background-color: white;
+    width: 550px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top: 178px;
+    right: 150px;
+    color: black;
+}
+#contform input{
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    color: black;
+}
+#contform textarea{
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    border: 1.5px solid black;
+    background-color: transparent;
+    padding: 5px;
+    border: 2px solid black;
+}
+#contform button{
+    width: 75%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgb(82, 82, 213);
+}
+
+
+
+@media (max-width:1300px){
+    #imgdiv{
+        position: absolute;
+        width: 45%;
+        height: 80%;
+        border-top-left-radius: 50px;
+        right: 4%;
+        top: 110px;
+    }
+    #content{
+        position: absolute;
+        top: 110px;
+        left: 30px;
+    }
+    #mea{
+        top: 30px;
+        right: 217px;
+    }
+    #htmlimg{
+        position: absolute;
+        left: 0px;
+    }
+    #cssimg{
+        position: absolute;
+        left: 12px;
+    }
+    #jsimg{
+        position: absolute;
+        right: 12px;
+    }
+    #reactimg{
+        position: absolute;
+        right: -15px;
+    }
+    
+   #continfo{
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    width: 45%;
+   }
+   #contform {
+    right: 50px;
+    width: 43%;
+   }
+}
+#pp{
+    color: rgba(73, 73, 237, 0.737);
+    font-family: "Protest Revolution", sans-serif;
+  font-weight: 800;
+  font-size: 90px;
+  font-style: normal;
+}
+
+@media (max-width:1180px){
+    #edu{
+        margin-left: 5%;
+    }
+    .cart{
+        width: 25%;
+    }
+}
+
+@media (max-width:910px){
+    #imgdiv{
+        position: absolute;
+        width: 66%;
+       height: 80vh;
+        border-top-left-radius: 50px;
+        right: 17%;
+    }
+   
+    #mea{
+        top: 25px;
+        right: 207px;
+    }
+    #content{
+        position: absolute;
+        top: 710px;
+        width: 80%;
+        left: 10%;
+
+    }
+    #about{
+        position: absolute;
+        top: 1080px;
+    }
+    
+    #htmlimg{
+        position: absolute;
+        left: 0px;
+    }
+    #cssimg{
+        position: absolute;
+        left: -25px;
+    }
+    #jsimg{
+        position: absolute;
+        right: -15px;
+        
+    }
+    #reactimg{
+        position: absolute;
+        right: -15px;
+        
+    }
+
+    #skill{
+        margin-top: 1330px;
+    }
+     #continfo{
+    position: absolute;
+    left: 30px;
+    top: 250px;
+    width: 48%;
+   }
+   #contform {
+    right: 30px;
+    width: 43%;
+   }
+    #edu{
+        margin-left: 5%;
+        
+    }
+    .cart{
+        width: 38%;
+    }
+}
+@media (max-width:800px){
+    
+     #htmlimg{
+        position: absolute;
+        left: -10px;
+        width: 150px;
+    }
+    #cssimg{
+        position: absolute;
+        left: -35px;
+    }
+    #jsimg{
+        position: absolute;
+        right: -15px;
+        width: 180px;
+        
+    }
+    #reactimg{
+        position: absolute;
+        right: -15px;
+        width: 180px;
+    }
+    #skill{
+        margin-top: 1400px;
+    }
+      #continfo{
+    position: absolute;
+    left: 15%;
+    top: 200px;
+    width: 70%;
+    height: 330px;
+   }
+   #contform {
+    right: 12%;
+    width: 76%;
+    top: 580px;
+    bottom: 30px;
+   }
+}
+
+@media (max-width:780px){
+    #interest{
+        width: 84%;
+        margin-left: 8%;
+    }
+    .intcart{
+        width: 28%;
+    }
+    #skill{
+        margin-top: 1590px;
+    }
+}
+
+@media (max-width:650px){
+     #htmlimg{
+        position: absolute;
+        left: -20px;
+        width: 150px;
+    }
+    
+    #interest{
+        width: 92%;
+        margin-left: 4%;
+    }
+    
+
+    #cssimg{
+        position: absolute;
+        left: -35px;
+        width: 160px;
+    }
+    #jsimg{
+        position: absolute;
+        right: -15px;
+        width: 160px;
+        
+    }
+    #reactimg{
+        position: absolute;
+        right: -15px;
+        width: 160px;
+    }
+    #skill{
+        margin-top: 1650px;
+    }
+
+    #about{
+        top: 1150px;
+    }
+
+      #continfo{
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    width: 80%;
+    height: 330px;
+   }
+   #contform {
+    right: 8%;
+    width: 84%;
+    top: 580px;
+    bottom: 30px;
+   }
+   #frontend{
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+   }
+   #backend{
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+    
+   }
+
+}
+@media (max-width:600px) {
+
+    #edu{
+        width: 90%;
+        margin-right: 5%;
+        gap: 5%;
+    }
+    .cart{
+        width: 38%;
+        margin-top: 20px;
+    }
+
+    #interest{
+        width: 86%;
+        margin-left: 7%;
+    }
+    .intcart{
+        width: 45%;
+    }
+
+    nav ul{
+        display:none;
+    }
+    #meanu{
+        display: block;
+    }
+    #imgdiv{
+        position: absolute;
+        width: 76%;
+       height: 80vh;
+        border-top-left-radius: 50px;
+        right: 12%;
+    }
+    #content{
+        position: absolute;
+        top: 690px;
+        width: 80%;
+    }
+    #content h1 #pp{
+        font-size: 70px;
+    }
+    
+     #htmlimg{
+        position: absolute;
+        top:300px;
+        opacity: 0.3;
+    }
+    #cssimg{
+        position: absolute;
+        opacity: 0.3;
+        top: 550px;
+    }
+    #jsimg{
+        position: absolute;
+        opacity: 0.3;
+    }
+    #reactimg{
+        position: absolute;
+        opacity: 0.3;
+        top: 450px;
+    }
+    #skill{
+        margin-top: 1750px;
+    }
+
+
+}
+
+@media (max-width:532px){
+    #edu{
+        
+        margin-right: 10%;
+        gap: 40px;
+    }
+    .cart{
+        width: 80%;
+        margin-top: 20px;
+    }
+    #skill{
+        margin-top: 1900px;
+    }
+    #interest{
+        width: 86%;
+        margin-left: 6%;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width:450px){
+    #imgdiv{
+        position: absolute;
+        width: 86%;
+        height: 60vh;
+        border-top-left-radius: 50px;
+        right: 7%;
+    }
+     #content h1 #pp{
+        font-size: 60px;
+    }
+    #content{
+        position: absolute;
+        top: 550px;
+        width: 80%;
+        left: 4%;
+    }
+
+}
+@media (max-width:480px){
+    #skill{
+        margin-top: 1990px;
+    }
+}
+
+@media (max-width:400px){
+     #em{
+        font-size: 15px;
+    }
+      #interest{
+        width: 94%;
+        margin-left: 3%;
+        gap: 24px;
+    }
+    .intcart{
+        width: 45%;
+    }
+}
+
+#cwp{
+    width: 86%;
+    background-color: #560b9bb7;
+    border: 1.2px solid rgba(255, 255, 255, 0.19);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#load{
+    width: 80%;
+    height: 25px;
+    margin-top: 20px;
+    background-color: #9d71fb;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid rgba(251, 248, 248, 0.167);
+}
+#color{
+    background-color: #2d077fd6;
+    width: 90%;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    border-radius: 5px;
+}
