@@ -39,7 +39,7 @@ setload(true)
     setmessage('')
     setname('')
     setstatus('')
-    const [load,setload]=useState(false)
+    setload(false)
 
   })
   .catch((err)=>{
