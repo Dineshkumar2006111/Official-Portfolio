@@ -90,23 +90,29 @@ nav ul{
     transition: width 0.28s ease-in;
     transform: translateX(-50%);
 }
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    
+    
+}
+
 #content{
-   
-    width:36%;
-    height:45vh;
-   
-    position: relative;
-    top: 17%;
-    left: 7%;
+    width:500px;
+    height:44%;
+    margin-top: 60px;
+    right: 50px;
+
 }
 
 #imgdiv{
     background-color: #9d71fb;
     width: 40%;
-    height: 80%;
-    position: absolute;
-    right: 8%;
-    top: 90px;
+    height: 550px;
+    margin-top: 60px;
+    position: relative;
     border-top-left-radius: 150px;
     border-top-right-radius:20px;
       
@@ -125,6 +131,7 @@ nav ul{
     display: flex;
     gap: 30px;
     margin-top: 20px;
+    justify-content: center;
 }
 #socialmedia li{
     list-style: none;
@@ -169,15 +176,18 @@ nav ul{
 }
 #about{
     width: 100%;
-    height: 100vh;
-    margin-top: 40px;
-}
-#acont{
+    height: 100%;
+    
     position: relative;
-    top: 12%;
+    
+}
+#acont{  
+    position: relative;
+    top: 60px;
     margin-left: 30px;
 }
 #acont h1{
+    
     text-align: center;
 }
 
@@ -204,7 +214,8 @@ nav ul{
     height: 50px;
     position: absolute;
     top: -32px;
-    left: 43%;
+    align-items: center;
+    left: 40%;
 }
 #edu{
     display: flex;
@@ -238,12 +249,12 @@ nav ul{
 
 #skill{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin-top: 10px;
 }
 #skillc{
-    top: 65px;
     position: relative;
+    top: 55px;
     
 }
 #skillc h1{
@@ -391,8 +402,9 @@ nav ul{
     list-style: none;
     display: flex;
     gap: 30px;
-    margin-left: 35%;
+    justify-content: center;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 #contform{
     background-color: white;
@@ -440,39 +452,13 @@ nav ul{
 
 
 @media (max-width:1300px){
-    #imgdiv{
-        position: absolute;
-        width: 45%;
-        height: 80%;
-        border-top-left-radius: 50px;
-        right: 4%;
-        top: 110px;
-    }
-    #content{
-        position: absolute;
-        top: 110px;
-        left: 30px;
-    }
+   
+    
     #mea{
         top: 30px;
         right: 217px;
     }
-    #htmlimg{
-        position: absolute;
-        left: 0px;
-    }
-    #cssimg{
-        position: absolute;
-        left: 12px;
-    }
-    #jsimg{
-        position: absolute;
-        right: 12px;
-    }
-    #reactimg{
-        position: absolute;
-        right: -15px;
-    }
+   
     
    #continfo{
     position: absolute;
@@ -502,53 +488,17 @@ nav ul{
     }
 }
 
-@media (max-width:910px){
-    #imgdiv{
-        position: absolute;
-        width: 66%;
-       height: 80vh;
-        border-top-left-radius: 50px;
-        right: 17%;
+@media (max-width:1020px){
+     #imgdiv{
+        width: 60%;
     }
-   
-    #mea{
-        top: 25px;
-        right: 207px;
-    }
-    #content{
-        position: absolute;
-        top: 710px;
-        width: 80%;
-        left: 10%;
-
-    }
-    #about{
-        position: absolute;
-        top: 1080px;
+    #home{
+        gap:0px;
     }
     
-    #htmlimg{
-        position: absolute;
-        left: 0px;
-    }
-    #cssimg{
-        position: absolute;
-        left: -25px;
-    }
-    #jsimg{
-        position: absolute;
-        right: -15px;
-        
-    }
-    #reactimg{
-        position: absolute;
-        right: -15px;
-        
-    }
+}
 
-    #skill{
-        margin-top: 1330px;
-    }
+@media (max-width:910px){
      #continfo{
     position: absolute;
     left: 30px;
@@ -560,38 +510,13 @@ nav ul{
     width: 43%;
    }
     #edu{
-        margin-left: 5%;
-        
+        margin-left: 5%; 
     }
     .cart{
         width: 38%;
     }
 }
 @media (max-width:800px){
-    
-     #htmlimg{
-        position: absolute;
-        left: -10px;
-        width: 150px;
-    }
-    #cssimg{
-        position: absolute;
-        left: -35px;
-    }
-    #jsimg{
-        position: absolute;
-        right: -15px;
-        width: 180px;
-        
-    }
-    #reactimg{
-        position: absolute;
-        right: -15px;
-        width: 180px;
-    }
-    #skill{
-        margin-top: 1400px;
-    }
       #continfo{
     position: absolute;
     left: 15%;
@@ -615,17 +540,15 @@ nav ul{
     .intcart{
         width: 28%;
     }
-    #skill{
-        margin-top: 1590px;
+    
+    #imgdiv{
+        width: 70%;
+        margin-left: 4%;
     }
+   
 }
 
 @media (max-width:650px){
-     #htmlimg{
-        position: absolute;
-        left: -20px;
-        width: 150px;
-    }
     
     #interest{
         width: 92%;
@@ -633,29 +556,9 @@ nav ul{
     }
     
 
-    #cssimg{
-        position: absolute;
-        left: -35px;
-        width: 160px;
-    }
-    #jsimg{
-        position: absolute;
-        right: -15px;
-        width: 160px;
-        
-    }
-    #reactimg{
-        position: absolute;
-        right: -15px;
-        width: 160px;
-    }
-    #skill{
-        margin-top: 1650px;
-    }
+   
 
-    #about{
-        top: 1150px;
-    }
+    
 
       #continfo{
     position: absolute;
@@ -710,46 +613,32 @@ nav ul{
         display: block;
     }
     #imgdiv{
-        position: absolute;
+        
         width: 76%;
-       height: 80vh;
+        height: 600px;
         border-top-left-radius: 50px;
-        right: 12%;
+        margin-left: 4%;
+    }
+  
+    
+    
+}
+
+@media (max-width:582px){
+    
+    #pp{
+        position: relative;
+        left: 20px;
+        font-size: 75px;
     }
     #content{
-        position: absolute;
-        top: 690px;
-        width: 80%;
+        width: 86%;
+        margin-left: 4%;
+        position: relative;
+        right: 10px;
     }
-    #content h1 #pp{
-        font-size: 70px;
-    }
-    
-     #htmlimg{
-        position: absolute;
-        top:300px;
-        opacity: 0.3;
-    }
-    #cssimg{
-        position: absolute;
-        opacity: 0.3;
-        top: 550px;
-    }
-    #jsimg{
-        position: absolute;
-        opacity: 0.3;
-    }
-    #reactimg{
-        position: absolute;
-        opacity: 0.3;
-        top: 450px;
-    }
-    #skill{
-        margin-top: 1750px;
-    }
-
-
 }
+
 
 @media (max-width:532px){
     #edu{
@@ -761,40 +650,40 @@ nav ul{
         width: 80%;
         margin-top: 20px;
     }
-    #skill{
-        margin-top: 1900px;
-    }
+   
     #interest{
         width: 86%;
         margin-left: 6%;
         gap: 30px;
     }
+ 
 }
 
+@media (max-width:480px){
+    #pp{
+        
+        position: relative;
+        left: 25px;
+    }
+}
 
 @media (max-width:450px){
-    #imgdiv{
-        position: absolute;
-        width: 86%;
-        height: 60vh;
-        border-top-left-radius: 50px;
-        right: 7%;
-    }
+    
      #content h1 #pp{
         font-size: 60px;
     }
-    #content{
-        position: absolute;
-        top: 550px;
-        width: 80%;
-        left: 4%;
-    }
 
 }
-@media (max-width:480px){
-    #skill{
-        margin-top: 1990px;
+@media (max-width:442px){
+    #pp{
+        font-size: 70px;
     }
+}
+@media (max-width:430px){
+     #pp{
+        font-size: 66px;
+    }
+    
 }
 
 @media (max-width:400px){
@@ -809,6 +698,22 @@ nav ul{
     .intcart{
         width: 45%;
     }
+     #pp{
+        font-size: 60px;
+    }
+   
+}
+@media (max-width:370px){
+    #pp{
+        font-size: 50px;
+        position: relative;
+        left: 15px;
+    }
+}
+
+
+@media (max-width:364px){
+    
 }
 
 #cwp{

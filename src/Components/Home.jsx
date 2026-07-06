@@ -19,21 +19,21 @@ const Home = () => {
   return (
     <div style={{marginTop:"60px"}}>
       
-      <div id="home" style={{width:"100%",height:"90vh"}}>
+      <div id="home" style={{width:"100%",}}>
         <div id="imgdiv"><img src="/images/meeai.png" alt="" /></div>
           <div id="content" >
             <h1 style={{fontSize:"46px"}}>Hi There,</h1>
-            <h1 style={{fontSize:"55px",marginTop:"-15px",textIndent:"30px"}}>I'm <p id="pp" style={{marginLeft:"-30px",marginTop:"-10px",}}>DineshKumar</p></h1>
+            <h1 style={{fontSize:"55px",marginTop:"-15px",textIndent:"30px"}}>I'm </h1><p id="pp" style={{marginLeft:"-30px",marginTop:"-10px",}}>DineshKumar</p>
             <h1 style={{fontSize:"40px"}}>And i'm a Web Developer</h1>
             <p style={{textIndent:"30px",textAlign:"justify"}}>It's Dineshkumar from namakkal. I had completed my higher secondary in Vevekananda School paundamangalam. I currently pursing my B.Tech Aritificail intelliegence and data science in V.S.B. Engineering college karur. I am seeking to learn about web development field and AI field. </p>
             <ul id="socialmedia">
               <li><a href="https://www.linkedin.com/in/sdineshkumar8285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin size={40} color="white" /></a></li>
               <li><a href="https://github.com/Dineshkumar2006111" target="_blank" rel="noopener noreferrer"><FaSquareGithub size={40} color="white" /></a></li>
-              <li><a href="https://www.instagram.com/sinchan._.boy16?igsh=MWE4eWQxcGloeTlobg==" target="_blank" rel="noopener noreferrer"><RiInstagramFill size={40} color="white"/></a></li>
+              <li><a href="https://www.instagram.com/this._.dinesh?igsh=MTZ6anBxMnZuNno0ag==" target="_blank" rel="noopener noreferrer"><RiInstagramFill size={40} color="white"/></a></li>
             </ul>
           </div>
-        {/* about */}
       </div>
+      {/* about */}
       <div id="about">
         <div id="acont">
           <h1>AboutMe</h1>
@@ -74,7 +74,7 @@ const Home = () => {
         </div>
         </div>
 
-<h2 style={{marginTop:"100px",marginLeft:"20px"}}><CiHeart /> Hobbies and Interest</h2>
+<h2 style={{marginTop:"77px",marginLeft:"20px"}}><CiHeart /> Hobbies and Interest</h2>
         <div id='interest'>
           <div className='intcart'>
             <center>
