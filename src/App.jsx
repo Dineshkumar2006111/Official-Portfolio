@@ -29,7 +29,7 @@ function App() {
     <ul id="mea"  onMouseEnter={()=>{setshow(true) }} onMouseLeave={()=>{setshow(false)}}><li><a href="#about">About</a></li>
       <p id="line"></p><li><a href="#skill">Skill</a></li></ul>
     }
-      <Link className="ll" to="/project" >Project</Link>
+      <Link className="ll" to="/project" >Profession</Link>
       <Link className="ll" to="/contact" >Contact</Link>
       </ul>
       <div id="meanu"><HiMenu size={35} onClick={()=>{sethidshowc(hidshowc+=1),fun()
@@ -40,7 +40,7 @@ function App() {
       <Link className="hl"  to="/" style={{textDecoration:"none",color:"white"}} onClick={()=>{sethidshowc(hidshowc+=1),fun()
       }}>Home</Link>
       <Link className="hl" to="/project" style={{textDecoration:"none",color:"white", marginTop:"4px"}} onClick={()=>{sethidshowc(hidshowc+=1),fun()
-      }}>Project</Link>
+      }}>Profession</Link>
       <Link className="hl" to="/contact" style={{textDecoration:"none",color:"white", marginTop:"4px"}} onClick={()=>{sethidshowc(hidshowc+=1),fun()
       }}>Contact</Link>
         </ul>
