@@ -253,7 +253,7 @@ useEffect(() => {
         <div className='certdiv'>
              <img src="/images/html.png" alt=""  onClick={()=>imgclick(event)}/>
             <div className='cont'>
-            <h3>CSC HTML,CSS,JS</h3>
+            <h3>CSC HTML, CSS, JS</h3>
             <p>Completed Basic of web development in CSC. I had learn HTML , CSS , and JS in this Course.</p>
             </div>
         </div>

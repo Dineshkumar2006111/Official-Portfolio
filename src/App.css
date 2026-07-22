@@ -466,8 +466,7 @@ nav ul{
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-top: 50px;
-   
+    margin-top: 50px;  
 }
 
 .certdiv{
@@ -480,6 +479,7 @@ nav ul{
     border-radius: 10px;
     transition: transform 0.3 ease;
 }
+
 .certdiv:hover{
     box-shadow: 0px 0px 10px rgb(69, 69, 248);
     transform: translateY(-5px);
@@ -870,17 +870,15 @@ nav ul{
    
     #interest{
         width: 86%;
-        margin-left: 6%;
+        margin-left: 3%;
         gap: 30px;
     }
-     .certdiv{
-        width:80%;
-        margin-left: 10%;
-    }
+     
     .insdiv{
         width: 80%;
         margin-left: 5%;
     }
+   
  
 }
 
@@ -911,6 +909,9 @@ nav ul{
     
      #content h1 #pp{
         font-size: 60px;
+    }
+    .certdiv img{
+        width: 180px;
     }
 
 }
@@ -964,6 +965,9 @@ nav ul{
     }
     #nexg h2{
         font-size: 18px;
+    }
+    .certdiv img{
+        margin-left: -10px;
     }
     
 }
