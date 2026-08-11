@@ -20,7 +20,7 @@ const Home = () => {
     <div style={{marginTop:"60px"}}>
       
       <div id="home" style={{width:"100%",}}>
-        <div id="imgdiv"><img src="/images/meeai.png" alt="" /></div>
+        <div id="imgdiv"><img src="/images/mel.jpeg" alt="" /></div>
           <div id="content" >
             <h1 style={{fontSize:"46px"}}>Hi There,</h1>
             <h1 style={{fontSize:"55px",marginTop:"-15px",textIndent:"30px"}}>I'm </h1><p id="pp" style={{marginLeft:"-30px",marginTop:"-10px",}}>DineshKumar</p>

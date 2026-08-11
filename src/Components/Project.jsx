@@ -1,4 +1,5 @@
-import React, { cloneElement, useEffect } from 'react'
+import React, { cloneElement, useEffect } from 'react';
+import { FaRocket, FaBookOpen } from "react-icons/fa";
 
 const Project = () => {
 useEffect(() => {
@@ -37,7 +38,25 @@ useEffect(() => {
       <center>
           <h1>Projects</h1>
           <p style={{marginTop:"15px"}}>Here are some of the projects I’ve built so far, reflecting my skills, learning, and passion for development.</p>
+          
+          
+          
+
           <div id='carddiv'>
+
+          <div className='projcard' name="wastereport">
+            <p className='projh'>MERN Todo List</p>
+            <p className='projd' style={{marginTop:"7px"}}>A MERN Stack To-Do List is a full-stack task management application that allows users to create, update, delete, and track tasks using MongoDB, Express.js, React.js, and Node.js.</p>
+            <ul>
+              <li>React</li>
+              <li>MERN</li>
+              <li>Bootstrap</li>
+
+            </ul>
+            <button><a href="" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
+
+          </div>
+
           <div className='projcard' name="wastereport">
             <p className='projh'>Smart Waste Management System</p>
             <p className='projd'>A React-based Waste Management System that allows users to report waste issues with descriptions, locations, and images.</p>
@@ -47,7 +66,7 @@ useEffect(() => {
               <li>Cloudinary</li>
 
             </ul>
-            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_webdevelopment-html-css-activity-7417881543446253569-WmkI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_reactjs-reduxtoolkit-javascript-ugcPost-7488228079027298304-mbRc/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
 
           </div>
 
@@ -162,7 +181,7 @@ useEffect(() => {
 
           <div className='projcard' name="booksky">
             <p className='projh'>Booksky</p>
-            <p className='projd'>This project helped me strengthen my understanding of DOM manipulation, responsive design, and UI structuring while focusing on simplicity and usability.</p>
+            <p className='projd'>This project helped me strengthen my understanding of DOM manipulation, responsive design.</p>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -197,7 +216,67 @@ useEffect(() => {
             </div>
       </center>
     </div>
+<p id='hl'></p>
 
+<section className="current-section">
+
+      {/* Current Project */}
+      <div className="card project-card">
+        <div className="card-title">
+          <FaRocket className="icon" />
+          <h2>CURRENT PROJECT</h2>
+        </div>
+
+        <h3>Expense Tracker Using MERN Stack</h3>
+
+        <p>
+          A MERN Stack Expense Tracker is a full-stack application for managing personal expenses and income efficiently.
+It allows users to add, edit, delete, and categorize transactions while tracking their financial activities.
+Built using MongoDB, Express.js, React.js, and Node.js, it provides a simple and user-friendly interface for monitoring expenses.
+
+        </p>
+
+        <div className="tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
+        </div>
+      </div>
+
+      {/* Currently Learning */}
+      <div className="card learning-card">
+        <div className="card-title">
+          <FaBookOpen className="icon" />
+          <h2>CURRENTLY LEARNING</h2>
+        </div>
+
+        <ul>
+  <li>
+    <strong>Advanced MERN Stack Development</strong>
+    <p>Building scalable full-stack applications using MongoDB, Express.js, React, and Node.js.</p>
+  </li>
+
+  <li>
+    <strong>REST API Development</strong>
+    <p>Creating secure and efficient APIs with Express.js and MongoDB.</p>
+  </li>
+
+  <li>
+    <strong>Authentication & Authorization</strong>
+    <p>Learning JWT authentication, protected routes, and user management.</p>
+  </li>
+
+  <li>
+    <strong>Cloud Deployment</strong>
+    <p>Deploying full-stack applications using Vercel, Render, and MongoDB Atlas.</p>
+  </li>
+</ul>
+      </div>
+
+    </section>
+ 
     <div id="participation">
       <h1 style={{textAlign:"center"}}>Participations</h1>
         <h1 id='hh'>Hackathon's (1)</h1>
