@@ -8,29 +8,7 @@ useEffect(() => {
 
 
 
-  const imgclick=(e)=>{
-    
-    var bd=document.getElementById("blur");
-    bd.innerHTML=""
-    bd.style.display="block"
-    
-    var tem=event.target
-    var cpyimag=tem.cloneNode(true);
-    bd.appendChild(cpyimag);
-    var cb=document.getElementById("cb");
-    cb.style.display="block"
-    
-  }
-  var cclick=()=>{
-    var bd=document.getElementById("blur");
-    bd.style.display="none";
-    var cb=document.getElementById("cb");
-    cb.style.display="none";
-    var cb=document.getElementById("cb");
-    cb.style.display="none";
-     
-
-  }
+  
 
   return (
     <div>
@@ -303,53 +281,42 @@ Built using MongoDB, Express.js, React.js, and Node.js, it provides a simple and
     <div id="Certificates">
       <h1 style={{textAlign:"center"}}>Certificates</h1>
 
-      <div id='certcon'>
-
-        <div className='certdiv'>
-            <img src="/images/nexgen.jpeg" alt="" onClick={()=>imgclick(event)} />
-            <div className='cont'>
-            <h3>NexGen Internship</h3>
-            <p>Completed an intensive internship focused on Python Full-Stack Web Application Development using the Django Framework.</p>
-            </div>
+      <div id='cert-div'>
+        <div className='cert-item'>
+            <h2>SIMATS Hackathon</h2>
+            <p>Participated in the Tech Sangamam Hackathon conducted by the SIMATS of Chennai.</p>
+            <button><a href="https://www.linkedin.com/posts/activity-7500575750866198528-Wsyf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
         </div>
-
-        <div className='certdiv'>
-             <img  src="/images/thirenex.png" alt="" onClick={()=>imgclick(event)}/>
-            <div className='cont'>
-            <h3>Thiranex Internship</h3>
+        <div className='cert-item'>
+            <h2>NexGen Internship</h2>
+            <p>Completed an intensive focused on python Full-Stack Web Application Development using the Django Framework.</p>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_internship-python-django-activity-7482804543823462405-TCUN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
+        </div>
+        <div className='cert-item'>
+            <h2>Nyeras Internship</h2>
+            <p>Successfully completed a 3-month Online Web Development Internship at Neyras, learned fundamentals of webdevelopment.</p>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_nyeras-fullstackdevelopment-webdevelopment-activity-7495109506398449664-s3FR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
+        </div>
+        <div className='cert-item'>
+            <h2>Thiranex Internship</h2>
             <p>Completed a month internship focused on Web Development in online and I have submit some projects in this internship.</p>
-            </div>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_internship-webdevelopment-thiranex-activity-7477663383241150464-O8IF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
         </div>
-
-        <div className='certdiv'>
-               <img  src="/images/hackathon.png" alt=""  onClick={()=>imgclick(event)}/>
-            <div className='cont'>
-            <h3 style={{marginTop:"-20px"}}>St. Joshep College</h3>
-            <p style={{marginTop:"15px"}}>Participated in Hackathon 2K26 conducted by the Department of Computer Science and Engineering at St. Joseph College of Engineering.</p>
-            </div>
+        <div className='cert-item'>
+            <h2>St. Joseph College Hackathon</h2>
+            <p>Participated in Hackathon 2K26 conducted by the Department of Computer Science and Engineering at St. Joseph College.</p>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_hackathon-learning-growth-activity-7444936200530001920-soGa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
         </div>
-
-        <div className='certdiv'>
-             <img src="/images/html.png" alt=""  onClick={()=>imgclick(event)}/>
-            <div className='cont'>
-            <h3>CSC HTML, CSS, JS</h3>
-            <p>Completed Basic of web development in CSC. I had learn HTML , CSS , and JS in this Course.</p>
-            </div>
+        <div className='cert-item'>
+            <h2>CSC Fundamental of Frontend</h2>
+            <p>Completed basics of Web development in CSC. I had learn HTML, CSS , JS in this course</p>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_certificateofmerit-webdevelopment-javascript-activity-7412149058154233857-rYrb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
         </div>
-        
-        <div className='certdiv'>
-             <img src="/images/csc hdca.png" alt="" onClick={()=>imgclick(event)} />
-            <div className='cont'>
-            <h3>CSC HDCA</h3>
-            <p>Completed an HDCA Course in the CSC Academy in my 12th leave. In this Course I had learned Some key techniques.</p>
-            </div>
+        <div className='cert-item'>
+            <h2>CSC HDCA</h2>
+            <p>Completed an HDCA course in the CSC academy in my 12th leave. In this course i had learned some key techniques</p>
+            <button><a href="https://www.linkedin.com/posts/sdineshkumar8285_firstlinkedinpost-hdca-learningjourney-activity-7411760635937746944-mNgM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF-Z-y4BNS8P8BxDci3ivP7zknJPCueux90" target="_blank" rel="noopener noreferrer">View in linkedin</a></button>
         </div>
-        
-        <div id='blur'>
-          
-          
-        </div>
-        <button id='cb' onClick={()=>cclick()}>X</button>
       </div>
     </div>
 

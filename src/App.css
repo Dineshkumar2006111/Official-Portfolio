@@ -282,17 +282,27 @@ nav ul{
     height: 450px;
     border-radius: 10px;
     border: 1px solid rgba(239, 238, 237, 0.171);
-     
+    
+    transition: transform 0.3s ease;
+}
+#frontend:hover{
+    box-shadow: 0px 0px 10px rgba(108, 126, 245, 0.87);
+    transform: translateY(-5px);
 }
 #backend{
   background-color: #281a456d;
   border: 1px solid rgba(239, 238, 237, 0.171);
-     width: 600px;
-    height: 450px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;  
 }
+#backend:hover{
+    box-shadow: 0px 0px 10px rgba(108, 126, 245, 0.87);
+    transform: translateY(-5px);
+}
+
 #frontend ul{
     list-style: none;
     margin-left: 45px;
@@ -407,13 +417,18 @@ nav ul{
 }
 
 #continfo{
-    background-color: #2a84c4;
+    background-color: #100145;
     position: absolute;
     width: 600px;
     height: 350px;
     top: 230px;
     left: 100px;
     border-radius: 20px;
+    transition: 0.3 ease-in-out;
+    box-shadow: 0px 0px 5px white;
+}
+#continfo:hover{
+    transform: translateY(-5px);
 }
 #contshow{
     list-style: none;
@@ -470,74 +485,7 @@ nav ul{
     margin-top: 60px;
 }
 
-#certcon{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 50px;  
-}
 
-.certdiv{
-    background-color: #391f8b;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    width:600px;
-    border: 1px solid rgba(255, 255, 255, 0.284);
-    border-radius: 10px;
-    transition: transform 0.3 ease;
-}
-
-.certdiv:hover{
-    box-shadow: 0px 0px 17px rgb(40, 40, 227);
-    transform: translateY(-5px);
-}
-
-.certdiv img{
-    height: 300px;
-    margin-top: 20px;   
-}
-
-.certdiv .cont{
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.cont p{
-    margin-top: 30px;
-}
-
-#blur{
-    background-color: rgba(0, 0, 0, 0.585);
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    display: none;
-    z-index: 1;
-    
-}
-
-#blur img{
-   height: 90%;
-   width: 44%;
-   margin-top: 64px;
-   margin-left: 28%;
-}
-#cb{
-    background-color: rgb(196, 9, 9);
-     z-index: 2;
-     height: 40px;
-     width: 50px;
-     position: fixed;
-     top: 80px;
-     right: 50px;
-     border: none;
-     outline: none;
-     font-size: 30px;
-     display: none;
-}
 
 
 
@@ -1162,4 +1110,39 @@ nav ul{
     position: absolute;
     left: 0px;
     border-radius: 5px;
+}
+
+#cert-div{
+    display: flex;
+    width: 94%;
+    margin-left: 3%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.cert-item{
+    width: 27%;
+    background-color: rgb(40, 44, 112);
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+}
+.cert-item p{
+    margin-top: 15px;
+    text-indent: 30px;
+}
+.cert-item button{
+    background-color: rgb(37, 102, 193);
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.cert-item button a{
+    text-decoration: none;
+    color: white;
 }
