@@ -1126,9 +1126,17 @@ nav ul{
     width: 27%;
     background-color: rgb(40, 44, 112);
     padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.304);
     border-radius: 10px;
     height: auto;
+    transition: 0.3 ease-in;
 }
+
+.cert-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 0px 10px rgb(79, 79, 248);
+}
+
 .cert-item p{
     margin-top: 15px;
     text-indent: 30px;
@@ -1145,4 +1153,15 @@ nav ul{
 .cert-item button a{
     text-decoration: none;
     color: white;
+}
+
+@media (max-width:798px){
+    .cert-item{
+        width: 40%;
+    }
+}
+@media (max-width:440px){
+    .cert-item{
+        width: 70%;
+    }
 }
